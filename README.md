@@ -18,13 +18,13 @@ x_train <- read.table("UCI HAR Dataset/train/X_train.txt", header = F)
 
 x <- rbind(x_test, x_train)
 
-## The features.txt file contains the features for the 561 long vetors in x_test
+## The features.txt file contains the features for the 561 long vectors in x
 
 features <- read.table("UCI HAR Dataset/features.txt")
 features.name <- make.names(features$V2)
 
 
-## Give features to test data
+## Give features (colnames) to test data
 
 colnames(x) <- features.name
 
@@ -46,7 +46,7 @@ x[,562] <- as.factor(ID$V1)
 colnames(x)[562] <- "ID"
 
 
-## Append the y_test to the x_test as a factor with lables obtained from 
+## Append the y_test to the x_test as a factor with labels obtained from 
 ## activity_labels.txt
 
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt",
