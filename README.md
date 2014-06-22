@@ -1,7 +1,5 @@
 Getting-and-Cleaning-Data-Project
 =================================
-The run_Analysis.R works by first reading the test an train files, merging them in a single file with the name "x" or "y" ################################################################################
-################################################################################
 ## Course Project
 ## Download file
 
